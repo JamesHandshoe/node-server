@@ -28,6 +28,6 @@ app.get('/', function(req, res){
 
 
 //listens to port # selected
-http.listen(5000, function(){
+http.listen(process.env.PORT || 5000, function(){
 	console.log('listening on *:5000');
 });
